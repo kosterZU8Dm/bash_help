@@ -2,6 +2,7 @@
 node_exporter_url=https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 node_exporter_arch=$(basename "$node_exporter_url")
 workdir=NE_dir
+mkdir $workdir
 cd $workdir || exit
 wget $node_exporter_url
 echo "---Download is Done---"
