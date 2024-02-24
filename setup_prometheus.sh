@@ -55,5 +55,4 @@ else
     echo "Service doesn't Work"
     exit 1
 fi
-cd ..
-rm -r $workdir
+cd ../../ && rm -r $workdir
